@@ -1,5 +1,6 @@
 <%= @posts.each do |post| %>
-  <%= render 'author' %>
+  <% author = post.author %>
+  <%= render 'authors/author' %>
   <%= post.title %>
   <%= post.content %>
 <% end %>
